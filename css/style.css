@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #f6f9f9;
+}
+.wrapper{
+    width: 80%;
+
+    margin: auto;
+}
+.header_wrapper{
+
+display: flex;
+
+padding: 15px 0;
+
+justify-content: space-between;
+
+align-items: center;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+
+}
+nav{
+
+width: 50%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+}
+nav ul li{
+    margin-left: 50px;
+}
+nav ul li a{
+    
+text-decoration: none;
+    
+text-transform: uppercase;
+}
+section{
+    
+position: relative;
+}
+section img{width: 100%;}
+.content{
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 50%;
+    
+transform: translate(-50%, -50%);
+    
+text-align: center;
+}
+.content h1{
+
+font-size: 100px;
+
+color: #ffffff;
+}
+samp{
+
+width: 100%;
+
+height: 2px;
+
+display: block;
+
+background: #15a4fa;
+}
+.content p{
+
+font-size: 18px;
+
+color: #ffffff;
+
+margin: 10px 0;
+}
+button{
+
+border: none;
+
+background: transparent;
+
+border: 1px solid #15a4fa;
+
+padding: 10px 20px;
+
+border-radius: 3px;
+
+margin: 5px 0;
+
+color: #fff;
+
+text-transform: capitalize;
+
+}
+button:hover{
+    background-color: #15a4fa;
+    transition: .5s all ease-in-out;
+}
+.icon{
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, 0px);
+    color: #fff;
+    font-size: 20px;
+    animation: updown 1s linear infinite alternate;
+}
+@keyframes updown{
+    0%{
+        bottom: 100px;
+    }
+    100%{
+        bottom: 130px;
+    }
+}
+.Simple_section{
+    background-color: #f6f9f9;
+    padding:60px 0;
+    text-align: center;
+}
+.Simple_section h1{
+    text-transform: capitalize;
+    font-size: 30px;
+    color: #2d3950;
+    margin-bottom: 20px;
+}
+.Simple_section p{
+
+}
+.feature_section{
+    padding: 60px 0;
+}
+.feature{
+    
+display: flex;
+    
+justify-content: space-between;
+}
+.feature_item{
+    
+width: 30%;
+    
+text-align: center;
+}
+.feature_item h1{
+
+font-size: 22px;
+
+font-weight: 600;
+}
+.feature_item p{
+
+}
+.icon_box{
+
+height: 70px;
+
+width: 70px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+50,53cbf1+50,5fc3ff+100 */
+background: linear-gradient(to right,  #48baff 0%,#48baff 50%,#53cbf1 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+color: #fff;
+
+font-size: 30px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: auto;
+
+margin-bottom: 20px;
+}
+.works_section{
+    
+padding: 60px 0;
+    
+background-color: #f6f9f9;
+}
+.works_section h2{
+
+font-size: 22px;
+
+font-weight: 600;
+
+text-align: center;
+
+margin-bottom: 10px;
+
+text-transform: capitalize;
+}
+.works_section p{
+
+text-align: center;
+}
+.works{
+
+margin-top: 50px;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+flex-wrap: wrap;
+}
+.single_works{
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.single_works img{
+    width: 100%;
+}
+.single_works::before{
+    content: "";
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #15a4fa;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    border-radius: 50%;
+}
+.icon_list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.single_works:hover .icon_list{
+    opacity: 1;
+
+}
+
+.icon_list a{
+
+color: #fff;
+
+height: 40px;
+
+width: 40px;
+
+display: block;
+
+border: 1px solid #fff;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+margin: 5px;
+
+text-decoration: none;
+
+border-radius: 3px;
+}
+.icon_list a:hover{
+    background-color: #15a4fa;
+}
+
+.single_works:hover::before{
+    opacity: .5;
+    width: 150%;
+    height: 150%;
+}
+.contact_section{
+    background-image: url(../img/banner-2t.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    position: relative;
+}
+.contact_section::before{
+    content: '';
+    position:absolute ;
+    width: 100%;
+    height: 100%;
+    background-color:#2d384b;
+    opacity: .5;
+    left: 0;
+    top: 0;
+}
+.contact_wrapper{
+    
+width: 40%;
+    
+margin: auto;
+    
+z-index: 1;
+    
+position: relative;
+}
+.contact_wrapper h2{
+
+text-align: center;
+
+font-size: 50px;
+
+color: #fff;
+
+text-transform: capitalize;
+}
+.contact_wrapper p{
+
+text-align: center;
+
+color: #fff;
+}
+form{
+
+}
+form input{
+
+width: 100%;
+
+padding: 10px 5px;
+
+background: transparent;
+
+margin: 10px 0;
+
+border: none;
+
+border: 1px solid #fff;
+
+border-radius: 3px;
+}
+form textarea{
+    width: 100%;
+    padding: 10px 5px;
+    background: transparent;
+    margin: 10px 0;
+    border: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+.send_row{
+
+display: flex;
+
+justify-content: space-between;
+}
+.checkbox{
+    
+display: flex;
+    
+align-items: center;
+    
+justify-content: space-between;
+
+}
+.checkbox input[type='checkbox']{
+    width: auto;
+    margin-right: 20px;
+}
+.checkbox p{
+
+color: #fff;
+}
+input[type="submit"] {
+    width: 100px;
+    border-color: #15a4fa;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+footer{
+
+background: #f6f9f9;
+}
+.footer_wrapper{
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 15px;
+
+align-items: center;
+}
+.copyright{
+    
+width: 203;
+}
+.copyright h2{
+
+color: #999999;
+
+text-transform: capitalize;
+
+font-size: 15px;
+}
+.list_icons{
+
+width: 50%;
+}
+.list_icons ul{
+
+display: flex;
+
+justify-content: end;
+
+list-style: none;
+}
+.list_icons ul li{
+
+margin-right: 5px;
+}
+.list_icons ul li a{
+
+width: 30px;
+
+height: 30px;
+
+display: block;
+
+background: #15a4fa;
+
+color: #fff;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+border-radius: 3px;
+
+text-decoration: none;
+}
